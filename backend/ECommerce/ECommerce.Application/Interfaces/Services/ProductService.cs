@@ -1,118 +1,137 @@
-using Microsoft.EntityFrameworkCore;
 using ECommerce.Application.DTOs.Product;
+using ECommerce.Application.Interfaces.Repositories;
 using ECommerce.Application.Interfaces.Services;
 using ECommerce.Domain.Entities;
-using ECommerce.Infrastructure.Persistence;
 
-namespace ECommerce.Application.Services
+namespace ECommerce.Application.Services;
+
+public class ProductService : IProductService
 {
-    public class ProductService : IProductService
+    private readonly IProductRepository _productRepository;
+
+    public ProductService(
+        IProductRepository productRepository)
     {
-        private readonly ApplicationDbContext _context;
+        _productRepository = productRepository;
+    }
 
-        public ProductService(ApplicationDbContext context)
+    // GET ALL PRODUCTS
+    public async Task<List<ProductDto>> GetAllAsync()
+    {
+        var products =
+            await _productRepository.GetAllAsync();
+
+        return products.Select(p => new ProductDto
         {
-            _context = context;
-        }
+            ProductId = p.Id,
+            CategoryId = p.CategoryId,
+            Name = p.Name,
+            Price = p.Price,
+            StockQuantity = p.StockQuantity,
+            CategoryName = p.Category?.Name
+        }).ToList();
+    }
 
-        // GET ALL
-        public async Task<List<ProductDto>> GetAllAsync()
+    // GET PRODUCT BY ID
+    public async Task<ProductDto?> GetByIdAsync(
+        int productId)
+    {
+        var product =
+            await _productRepository
+                .GetByIdAsync(productId);
+
+        if (product == null)
+            return null;
+
+        return new ProductDto
         {
-            var products = await _context.Products
-                .Include(p => p.Category)
-                .ToListAsync();
+            ProductId = product.Id,
+            CategoryId = product.CategoryId,
+            Name = product.Name,
+            Price = product.Price,
+            StockQuantity = product.StockQuantity,
+            CategoryName = product.Category?.Name
+        };
+    }
 
-            return products.Select(p => new ProductDto
-            {
-                ProductId = p.ProductId,
-                CategoryId = p.CategoryId,
-                Name = p.Name,
-                Price = p.Price,
-                StockQuantity = p.StockQuantity,
-                CategoryName = p.Category != null ? p.Category.Name : null
-            }).ToList();
-        }
-
-        // GET BY ID
-        public async Task<ProductDto?> GetByIdAsync(Guid productId)
+    // CREATE PRODUCT
+    public async Task<ProductDto> CreateAsync(
+        CreateProductDto dto)
+    {
+        var product = new Product
         {
-            var p = await _context.Products
-                .Include(x => x.Category)
-                .FirstOrDefaultAsync(x => x.ProductId == productId);
+            CategoryId = dto.CategoryId,
+            Name = dto.Name,
+            Description = dto.Description,
+            Price = dto.Price,
+            StockQuantity = dto.StockQuantity,
+            SKU = dto.SKU,
+            ImageUrl = dto.ImageUrl
+        };
 
-            if (p == null) return null;
+        await _productRepository.AddAsync(product);
 
-            return new ProductDto
-            {
-                ProductId = p.ProductId,
-                CategoryId = p.CategoryId,
-                Name = p.Name,
-                Price = p.Price,
-                StockQuantity = p.StockQuantity,
-                CategoryName = p.Category?.Name
-            };
-        }
+        await _productRepository.SaveChangesAsync();
 
-        // CREATE
-        public async Task<ProductDto> CreateAsync(CreateProductDto dto)
+        return new ProductDto
         {
-            var product = new Product
-            {
-                ProductId = Guid.NewGuid(),
-                CategoryId = dto.CategoryId,
-                Name = dto.Name,
-                Price = dto.Price,
-                StockQuantity = dto.StockQuantity
-            };
+            ProductId = product.Id,
+            CategoryId = product.CategoryId,
+            Name = product.Name,
+            Price = product.Price,
+            StockQuantity = product.StockQuantity
+        };
+    }
 
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+    // UPDATE PRODUCT
+    public async Task<ProductDto?> UpdateAsync(
+        int productId,
+        UpdateProductDto dto)
+    {
+        var product =
+            await _productRepository
+                .GetByIdAsync(productId);
 
-            return new ProductDto
-            {
-                ProductId = product.ProductId,
-                CategoryId = product.CategoryId,
-                Name = product.Name,
-                Price = product.Price,
-                StockQuantity = product.StockQuantity
-            };
-        }
+        if (product == null)
+            return null;
 
-        // UPDATE
-        public async Task<ProductDto?> UpdateAsync(Guid productId, UpdateProductDto dto)
+        product.CategoryId = dto.CategoryId;
+        product.Name = dto.Name;
+        product.Description = dto.Description;
+        product.Price = dto.Price;
+        product.StockQuantity = dto.StockQuantity;
+        product.SKU = dto.SKU;
+        product.ImageUrl = dto.ImageUrl;
+
+        await _productRepository.UpdateAsync(product);
+
+        await _productRepository.SaveChangesAsync();
+
+        return new ProductDto
         {
-            var product = await _context.Products.FindAsync(productId);
+            ProductId = product.Id,
+            CategoryId = product.CategoryId,
+            Name = product.Name,
+            Price = product.Price,
+            StockQuantity = product.StockQuantity
+        };
+    }
 
-            if (product == null) return null;
+    // DELETE PRODUCT
+    public async Task<bool> DeleteAsync(
+        int productId)
+    {
+        var product =
+            await _productRepository
+                .GetByIdAsync(productId);
 
-            product.CategoryId = dto.CategoryId;
-            product.Name = dto.Name;
-            product.Price = dto.Price;
-            product.StockQuantity = dto.StockQuantity;
+        if (product == null)
+            return false;
 
-            await _context.SaveChangesAsync();
+        await _productRepository.DeleteAsync(product);
 
-            return new ProductDto
-            {
-                ProductId = product.ProductId,
-                CategoryId = product.CategoryId,
-                Name = product.Name,
-                Price = product.Price,
-                StockQuantity = product.StockQuantity
-            };
-        }
+        await _productRepository.SaveChangesAsync();
 
-        // DELETE
-        public async Task<bool> DeleteAsync(Guid productId)
-        {
-            var product = await _context.Products.FindAsync(productId);
-
-            if (product == null) return false;
-
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
-
-            return true;
-        }
+        return true;
     }
 }

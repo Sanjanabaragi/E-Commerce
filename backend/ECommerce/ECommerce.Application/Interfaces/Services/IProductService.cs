@@ -8,15 +8,15 @@ namespace ECommerce.Application.Interfaces.Services
         Task<List<ProductDto>> GetAllAsync();
 
         // GET product by id
-        Task<ProductDto?> GetByIdAsync(Guid productId);
+        Task<ProductDto?> GetByIdAsync(int productId);
 
         // CREATE product
         Task<ProductDto> CreateAsync(CreateProductDto dto);
 
         // UPDATE product
-        Task<ProductDto?> UpdateAsync(Guid productId, UpdateProductDto dto);
+        Task<ProductDto?> UpdateAsync(int productId, UpdateProductDto dto);
 
         // DELETE product
-        Task<bool> DeleteAsync(Guid productId);
+        Task<bool> DeleteAsync(int productId);
     }
 }
