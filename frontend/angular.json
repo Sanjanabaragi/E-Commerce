@@ -4,6 +4,7 @@
   "cli": {
     "packageManager": "npm",
     "analytics": "11aba941-83ae-4d53-b37d-f0fe4482792d"
+    "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -25,9 +26,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": [ "src/styles.css"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
