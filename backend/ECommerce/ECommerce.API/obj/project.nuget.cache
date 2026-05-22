@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "h2d+sv9Hl14=",
+  "dgSpecHash": "XSZlM/IiuBY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.API\\ECommerce.API.csproj",
+  "projectFilePath": "C:\\project\\E-Commerce\\backend\\ECommerce\\ECommerce.API\\ECommerce.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\padag\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
-    "C:\\Users\\padag\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }
