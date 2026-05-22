@@ -1,0 +1,31 @@
+## Visual Studio Temporary Files and Cache
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## .NET Build Outputs (The cause of your conflict)
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+## Tooling and Packages
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## OS Generated Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
