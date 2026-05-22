@@ -1,4 +1,4 @@
-﻿namespace ECommerce.API.Configurations;
+﻿namespace ECommerce.Infrastructure.Identities;
 
 public class JwtSettings
 {

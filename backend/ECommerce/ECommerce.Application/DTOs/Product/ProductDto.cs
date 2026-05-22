@@ -2,9 +2,9 @@ namespace ECommerce.Application.DTOs.Product
 {
     public class ProductDto
     {
-        public Guid ProductId { get; set; }
+        public int ProductId { get; set; }
 
-        public Guid CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
