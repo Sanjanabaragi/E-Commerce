@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2EBBE0-DCDD-4473-8630-89DDB85EA889}|ECommerce.Tests\\ECommerce.Tests.csproj|c:\\users\\padag\\desktop\\hcl .net training\\full stack projects\\e-commerce\\backend\\ecommerce\\ecommerce.tests\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2EBBE0-DCDD-4473-8630-89DDB85EA889}|ECommerce.Tests\\ECommerce.Tests.csproj|solutionrelative:ecommerce.tests\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB82FA9-6874-49DB-B711-013FEB9E8B14}|ECommerce.Shared\\ECommerce.Shared.csproj|c:\\users\\padag\\desktop\\hcl .net training\\full stack projects\\e-commerce\\backend\\ecommerce\\ecommerce.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB82FA9-6874-49DB-B711-013FEB9E8B14}|ECommerce.Shared\\ECommerce.Shared.csproj|solutionrelative:ecommerce.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8567792-9701-4147-B726-6D62351EF4C9}|ECommerce.Infrastructure\\ECommerce.Infrastructure.csproj|c:\\users\\padag\\desktop\\hcl .net training\\full stack projects\\e-commerce\\backend\\ecommerce\\ecommerce.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8567792-9701-4147-B726-6D62351EF4C9}|ECommerce.Infrastructure\\ECommerce.Infrastructure.csproj|solutionrelative:ecommerce.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C716CA3F-FCF3-4ED6-AF95-CDB8CC199FA8}|ECommerce.Domain\\ECommerce.Domain.csproj|c:\\users\\padag\\desktop\\hcl .net training\\full stack projects\\e-commerce\\backend\\ecommerce\\ecommerce.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C716CA3F-FCF3-4ED6-AF95-CDB8CC199FA8}|ECommerce.Domain\\ECommerce.Domain.csproj|solutionrelative:ecommerce.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0DCCC93-92A8-4361-87E3-04FFB63D625A}|ECommerce.Application\\ECommerce.Application.csproj|c:\\users\\padag\\desktop\\hcl .net training\\full stack projects\\e-commerce\\backend\\ecommerce\\ecommerce.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0DCCC93-92A8-4361-87E3-04FFB63D625A}|ECommerce.Application\\ECommerce.Application.csproj|solutionrelative:ecommerce.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Tests\\Class1.cs",
+              "RelativeDocumentMoniker": "ECommerce.Tests\\Class1.cs",
+              "ToolTip": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Tests\\Class1.cs",
+              "RelativeToolTip": "ECommerce.Tests\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:40:14.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Shared\\Class1.cs",
+              "RelativeDocumentMoniker": "ECommerce.Shared\\Class1.cs",
+              "ToolTip": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Shared\\Class1.cs",
+              "RelativeToolTip": "ECommerce.Shared\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:39:51.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "ECommerce.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "ECommerce.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:37:39.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "ECommerce.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Domain\\Class1.cs",
+              "RelativeToolTip": "ECommerce.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:36:08.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "ECommerce.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\padag\\Desktop\\HCL .NET Training\\Full Stack Projects\\E-Commerce\\backend\\ECommerce\\ECommerce.Application\\Class1.cs",
+              "RelativeToolTip": "ECommerce.Application\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:34:20.056Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
