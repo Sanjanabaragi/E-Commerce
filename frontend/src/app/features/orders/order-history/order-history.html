@@ -1,0 +1,19 @@
+<div class="orders-container">
+
+  <h2>Order History</h2>
+
+  <div class="order-card" *ngFor="let order of orders">
+
+    <h3>Order #{{ order.orderId }}</h3>
+
+    <p>Product: {{ order.product }}</p>
+
+    <p>Amount: ₹{{ order.amount }}</p>
+
+    <p>Status: {{ order.status }}</p>
+
+    <button>View Details</button>
+
+  </div>
+
+</div>

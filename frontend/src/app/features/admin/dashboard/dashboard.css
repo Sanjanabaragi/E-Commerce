@@ -1,0 +1,9 @@
+.dashboard {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 15px;
+}
