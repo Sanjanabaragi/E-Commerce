@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { CustomerLayoutComponent } from './layouts/customer-layout/customer-layout.component';
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { CustomerLayoutComponent } from './layouts/customer-layout/customer-layout';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout';
 import { authGuard } from './core/guards/auth.guard';
 import { adminGuard } from './core/guards/admin.guard';
 
